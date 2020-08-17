@@ -1,0 +1,120 @@
+/* 样式重置,所有的样式重置再reset.css中重置                */
+/* 不希望使用HTML标签自带的CSS属性时候，将其不需要的属性重置 */
+/* 需要用到的标签需要重置，以及用到的标签有相应属性的时候重置 */
+/* 就像body以及ul没有list-style,就没必要一起重置           */
+/* 定义一些预定义的样式                                   */
+
+body,
+p,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+image {
+    /* image 的border在谷歌等浏览器是没有border的，但ie有，为了保证兼容性，需要重置 */
+    border: none;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: #3c3c3c;
+}
+
+i {
+    font-style: normal;
+}
+
+input,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    outline: none;
+}
+
+table {
+    /* 边框模式  合并 */
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 0;
+}
+
+body {
+    /* 第一行，字体大小/行高(行高尽量用数字) */
+    font: 12px/1.5 tahoma,
+        arial,
+        'Hiragino Sans GB',
+        '\5b8b\4f53',
+        sans-serif;
+    /* \5b8b\4f53是代表宋体的Unicode编码   */
+    color: #3c3c3c;
+    background-color: #f4f4f4;
+}
+
+/* 预定义样式                             */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: inline-block;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.layer {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.c4 {
+    color: #f40;
+}
+
+.c5 {
+    color: #f50;
+}
+
+.fsize12 {
+    font-size: 12px;
+}
+
+.mr5 {
+    margin-right: 5px;
+}
+
+.mr7 {
+    margin-right: 7px;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mr10 {
+    margin-right: 10px;
+}
+
+.colorD {
+    color: #DDDDDD;
+}
